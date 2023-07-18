@@ -9,11 +9,11 @@ def move(arr: list[list[str]]):
     for i in arr:
         for j in i:
             print(f'Игрок {"X" if is_x_turn else "0"}, сделайте ход')
-            i = int(input('Введите стобец: '))
+            i = int(input('Введите столбец: '))
             j = int(input('Введите строчку: '))
             while arr[i][j] != '-':
                 print("Тут занято. Введите заново")
-                i = int(input('Введите стобец: '))
+                i = int(input('Введите столбец: '))
                 j = int(input('Введите строчку: '))
             c = "X" if is_x_turn else "0"
             matrix(arr, c, i, j)
